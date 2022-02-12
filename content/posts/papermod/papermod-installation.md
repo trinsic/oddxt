@@ -9,7 +9,7 @@ tags: ["PaperMod"]
 author: "Aditya Telange"
 ---
 
-## Intro 12
+## Intro
 
 - **We'll be using `yml/yaml` format for all examples down below, I recommend using `yml` over `toml` as it is easier to read.**
 - You can find any [YML to TOML](https://www.google.com/search?q=yml+to+toml) converters if necessary.
