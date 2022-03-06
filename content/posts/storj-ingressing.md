@@ -6,7 +6,7 @@ tags: ["storj", "crypto"]
 author: "Mark Antony"
 showToc: false
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false
 comments: false
 disableHLJS: true # to disable highlightjs
