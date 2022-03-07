@@ -1,5 +1,5 @@
 ---
-title: "Keeping on top of Storj before it stops ingressing data"
+title: "Storj - zero ingressing data"
 date: 2022-01-06
 description: ""
 tags: ["storj", "crypto"]
@@ -21,15 +21,11 @@ cover:
     image: "posts/images/storj.png" # image path/url
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 
 A Decentralized Cloud Storage Framework: Storj
 
-Storj is a peer-to-peer (p2p) system based on the blockchain. It allows for decentralized storage that is more immune to the problems that centralized offerings have such as downtime while still being a drop in replacement.
+Storj is a peer-to-peer system based on the blockchain. It allows for decentralized storage that is more immune to the problems that centralized offerings have such as downtime while being a drop in replacement.
 
 Earning the Storj token is done by contributing storage to the network. Earnings can come from Ingress, Egress, Audit/Repair and Stored Amount. Egress is where the money is; downloaded data pays out 20USD per TB.
 
@@ -45,14 +41,16 @@ Heading over to their forums you will find users pointing out that this is known
 
 I use this to keep my node up to date:
 
-    docker run -d \
-      --name watchtower \
-      -e WATCHTOWER_CLEANUP=true \
-      -e WATCHTOWER_TIMEOUT=20s \
-      -v /var/run/docker.sock:/var/run/docker.sock \
-      -v /etc/localtime:/etc/localtime:ro \
-      containrrr/watchtower \
-      storagenode
+```bash
+docker run -d \
+  --name watchtower \
+  -e WATCHTOWER_CLEANUP=true \
+  -e WATCHTOWER_TIMEOUT=20s \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /etc/localtime:/etc/localtime:ro \
+  containrrr/watchtower \
+  storagenode
+```
 
 I added a few environment variables to my liking:
 
