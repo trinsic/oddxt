@@ -5,7 +5,7 @@ date: "2022-02-15"
 author: "Mark Antony"
 tags: ["linux", "ssh"]
 cover:
-    image: "https://i.imgur.com/Dw5l7eE.png" # image path/url
+    image: "posts/images/endlessh.png" # image path/url
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 ShowToc: false

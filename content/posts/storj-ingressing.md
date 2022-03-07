@@ -18,9 +18,7 @@ ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 cover:
-    image: "https://i.imgur.com/yYqVlfM.png" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "posts/images/storj.png" # image path/url
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
