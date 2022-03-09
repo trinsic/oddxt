@@ -1,5 +1,5 @@
 ---
-title: "Storj - zero ingressing data"
+title: "Storj - Part 1"
 date: 2022-01-06
 description: ""
 tags: ["storj", "crypto"]
