@@ -23,11 +23,19 @@ cover:
     hidden: true # only hide on current single page
 ---
 
-A Decentralized Cloud Storage Framework: Storj
+Storj is a decentralized, open-source distributed cloud storage platform. It offers unlimited and secure data storage. The company has created a blockchain-based marketplace where users can rent out their unused hard drive space to earn Storj tokens (STORJ).
 
-Storj is a peer-to-peer system based on the blockchain. It allows for decentralized storage that is more immune to the problems that centralized offerings have such as downtime while being a drop in replacement.
+Here we will discuss the benefits of using Storj over other cloud storage providers such as Dropbox or Google Drive. These are some of the benefits:
 
-Earning the Storj token is done by contributing storage to the network. Earnings can come from Ingress, Egress, Audit/Repair and Stored Amount. Egress is where the money is; downloaded data pays out 20USD per TB.
+- Unlimited data storage
+
+- Secure data
+
+- No ingressing data
+
+- No central point of failure
+
+It was designed to provide a better solution for storing data in comparison to conventional cloud storage platforms. The Storj protocol achieves this by encrypting and distributing data among nodes in the network. This makes it impossible for any single node to access the entirety of the data stored on the network. The nodes are incentivized with cryptocurrency, which they receive when they offer storage space and bandwidth to the network.
 
 Storj works by splitting content 80x times and placing bits on different nodes for redundency (up to x2.7). To retrieve the bits again you only require 29 bits to remake the file. This is because of [Reed–Solomon error correction](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction), a form of erasure coding that allows a minimum amount of bits needed to remake the data.
 
@@ -61,4 +69,4 @@ The two volumes linked to the container (-v) are docker runtime so that watchtow
 
 Hint: As the last line of my command I have the containers I want to monitor. Rather than monitor all images I'm running I have just my Storj container called storagenode. This is handy as I run many containers that I don’t necessarily want to be updating the second they are released (number one cause of breaking things).
 
-Storj is exciting technology that is bound to change how storage on the internet works. I love how easy it is to contribute your own storage and can't wait to see real-world usage in time.
+Storj is exciting technology that is bound to shake up traditional centralized cloud storage providers. I love how easy it is to contribute your own storage and can't wait to see real-world usage in time.
