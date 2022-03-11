@@ -1,6 +1,6 @@
 ---
 title: "Collection of Docker scripts"
-description: "A list of available docker images I use at home"
+description: "A list of available docker images I use on my homelab servers."
 author: "Mark Antony"
 showToc: true
 TocOpen: false

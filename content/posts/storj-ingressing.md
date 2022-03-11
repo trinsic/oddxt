@@ -1,7 +1,7 @@
 ---
 title: "Storj - Part 1"
 date: 2022-01-06
-description: ""
+description: "Looking at web3 nextgen storage concepts that will radically change how we look at storing our data."
 tags: ["storj", "crypto"]
 author: "Mark Antony"
 showToc: false
