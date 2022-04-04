@@ -1,6 +1,6 @@
 ---
 title: "Collection of Docker scripts"
-description: "A list of available docker images I use on my homelab servers."
+description: "My curated list of Docker Images I use in my homelab."
 author: "Mark Antony"
 showToc: true
 TocOpen: false
@@ -21,7 +21,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 ---
-This post is a collection of Docker images I use on my homelab servers. Docker uses OS-level virtualization to deliver software in packages called containers. They're completely self-contained and allow a user to quickly spin-up any software almost instantly to use or test out without installing extra.
+This post is a collection of Docker Images I use in my homelab. Docker uses OS-level virtualization to deliver software in packages called containers. They're completely self-contained and allow a user to quickly spin-up any software almost instantly to use or test out without installing extra packages.
 
 ### Crypto
 #### Storj
@@ -44,3 +44,17 @@ docker run -d --restart always --stop-timeout 300 \
 --name storagenode storjlabs/storagenode:latest
 ```
 As of 2022, you can run a Storj node on a Raspberry Pi 3B or higher; or an x86 machine.
+
+### Security
+#### Endlessh
+
+Endlessh is a network service that opens a network socket to purposefully catch port scanners and other nefarious users into getting stuck in a permanent loop.
+
+```bash
+docker run -d \
+--name endlessh \
+-p 2222:2222 \
+shizunge/endlessh-go \
+-logtostderr \
+-v=1
+```
