@@ -42,7 +42,7 @@ The benefit of a Raspberry Pi device is power usage, becoming more important wit
 
 The usage stats are looking healthy too. 13k+ active nodes worldwide, providing 6.5PB and storing over 466 million objects split over 37 billion times between the nodes. Storj has seen year on year growth as its service matures.
 
-![Storj stats](/images/storj.stats.png)
+![Storj stats](posts/images/storj.stats.png)
 
 ### To get us started we will need:
 1. A computer device
@@ -133,6 +133,6 @@ Your ```WALLET``` is your ERC20 based address to accept Storj tokens. ERC20 are 
 
 If everything is setup correct you will have a working web dashboard you can access on port 14002. As long as you see a Status of Online you are officially running an active node on Storj!
 
-![Storj Dashboard](/images/storj.dashboard.png)
+![Storj Dashboard](posts/images/storj.dashboard.png)
 
 I want to finish this post off by saying you will not get rich overnight. Or at all... It is not recommended to go out and buy new equipment for this either, the ROI is not there. IF (and this is a big if) you have the hardware already and want to offer some compute and storage towards Storj then go for it.
