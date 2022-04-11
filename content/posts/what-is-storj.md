@@ -1,5 +1,5 @@
 ---
-title: "What is Storj?"
+title: "Storj - what is Storj? (Part 2)"
 date: 2022-03-15
 description: "Today we look at Storj. What is it and who can benefit from it."
 tags: ["crypto", "storj"]

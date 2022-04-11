@@ -1,5 +1,5 @@
 ---
-title: "Run your own Storj node"
+title: "Storj - Run your own node (Part 3)"
 date: 2022-04-11
 description: "Become part of the decentralized cloud and get paid for your extra bandwidth and storage capacity."
 tags: ["crypto", "storj"]
