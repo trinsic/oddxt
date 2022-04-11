@@ -25,30 +25,30 @@ cover:
 
 >With Storj DCS (Decentralized Cloud Storage) files aren’t stored in centralized data centers—they're encrypted, split into pieces, and distributed on a global cloud network.
 
-That's the message they convey on their website. They're a decentralized cloud storage network. Much like AWS, Azure and the many other cloud storage providers out there. Only the big difference is where this data is being stored, and for Storj that data is hosted on consumer/datacenter systems run by user nodes and not Storj itself.
+That's the message they convey on their website. They're a decentralized cloud storage network. Much like AWS, Azure and the many other cloud storage providers out there. The difference is where this data is being stored, and for Storj, that data gets hosted on consumer run systems, not Storj itself.
 
 Storj offers the software while the user nodes offer unused storage to others looking to store files, together this creates a completely decentralized storage network.
 
-In order to protect the network from downtime Storj audits the network with random file verification every hour to ensure its files are consistently available. User nodes must be able to provide cryptographic proof the data is still available, upon receipt of said proof the user node receives payments for storing the data.
+To protect the network from downtime Storj audits the network with random file verification every hour to ensure its files are available. User nodes must be able to provide cryptographic proof the data is still available, upon receipt of said proof the user node receives payments for storing the data.
 
-Storj uses blockchain technology to run its token (STORJ). However the upside is they base all billing in USD so as to keep prices set. You do not require the token to pay for storage, this keeps the value of storage static with no worries of token price increases.
+Storj uses blockchain technology to run its token (STORJ). The upside is they base all billing in USD to keep prices level. You do not need the token to pay for storage, this keeps the value of storage static with no worries of token price increases.
 
-And naturally like its competitors you do not need to go to the source to get your storage needs. Third party companies can easily use Storj to provide storage to its own users with the same plugins that S3 uses.
+And like its competitors, you do not need to go to the source to get your own storage needs. Third party companies can use Storj to provide storage to its own users with through S3 APIs.
 
-An example is https://filebase.com, Filebase provides 1TB storage for $5.99 a month with a pay as you go model after that. Their storage is provided by Storj and Sia, both decentralized storage networks.
+An example is https://filebase.com, Filebase provides 1TB storage for $5.99 a month with a pay as you go model after that. Their storage comes from Storj and Sia, both decentralized storage networks.
 
-Now the real question is why go this route at all? Price is a factor naturally but what else do we get from moving away from centralized storage to decentralized storage?
+Now the real question is why go this route at all? Price is a factor but what else do you get from moving away from centralized storage to decentralized storage?
 
 ### Censorship
-The wild west of the internet is long over. But an issue faced by some is with their politics, users may even face complete blocks by tyrannical governments if their views are not aligned. Even Wikipedia has faced blockades, but with decentralized platforms, being blocked becomes much more difficult when the data can be accessed from not just one location but many.
+The wild west of the internet is long over. But an issue faced by some is with their politics, users may even face complete blocks by tyrannical governments if their views are not aligned. Even Wikipedia has faced blockades, but with decentralized platforms, being blocked becomes much more difficult when the data can be accessed from not one location but many.
 
 ### Data control
-Are you really willing to hand your data over to third-party providers knowing that their views impact what you can store? Google actively removes files from users personal accounts without resource. With decentralization comes default encryption, your data is never completely stored on a single node, it's split and encrypted amongst many nodes providing ultimate privacy.
+Are you willing to hand your data over to third-party providers knowing that their views impact what you can store? Google removes files from users personal accounts without resource. With decentralization comes default encryption, your data is never completely stored on a single node, it's split and encrypted amongst many nodes providing ultimate privacy.
 
 ### Uptime
 AWS, the largest storage provider on the internet, providing 33% of all internet resources is a behemoth online. This behemoth though is not without problems. AWS has suffered outages that affected many of the top 100 websites online. In December of 2021 they had three separate outages, December 7 was a hectic day for them as many first-party Amazon services and third-party services were rendered useless.
 
-As of now, decentralization has not been truly tested. It's immune to censorship, it secures your data, and uptime is 100%. Will the features that make all this sound great hold up over time as more users and services start using decentralized storage? Only one way to find out.
+As of now, decentralization has not been tested at scale. It's immune to censorship, it secures your data, and uptime is 100%. Will this hold up over time as more users and services start using decentralized storage? Only one way to find out.
 
 As of 2022 the price comparison with the main centralized competitors:
 

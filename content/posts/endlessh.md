@@ -17,9 +17,9 @@ TocOpen: true
 
 ### Intro
 
-Endlessh is a network service that opens a network socket to purposefully catch port scanners and other nefarious users into getting stuck in a permanent loop. They can try again and again to connect but the terminal will never proceed to the authentication part of the shell.
+What is Endlessh? Endlessh is a network based service that catches port scanners and nefarious users by sticking them in a permanent loop. Try as they might the terminal will never proceed to the authentication part of the shell.
 
-So lets install it.
+Lets install!
 
 ```bash
 git clone https://github.com/skeeto/endlessh
@@ -36,19 +36,19 @@ After cloning the repo, here’s how you can try it out for yourself (default po
 ssh -p2222 localhost
 ```
 
-Congratulations, your SSH client will now sit at a blank screen trying to connect forever.
+Congratulations, SSH clients will now sit at blank screens trying to connect forever.
 
-Endlessh also has a config file available, you can change ports, timers, max clients etc. Most of this is not important as the defaults are good enough, if you enable at boot the settings could be of some help.
+Endlessh also has a config available. You can change ports, timers, max clients etc. The biggest use of the config is having Endlessh run at boot.
 
-My homelab listens on port 2222, which I forward to port 22 on my router. As of writing this my IP is hit with 8095 connections with 67 concurrent connections in the last 24 hours, 7500 come from China alone. To actually stop this from happening you would need a Geo-IP filter / firewall so you can straight up block entire IP blocks from getting near your system. It isn't uncommon to hear users blocking entire countries from their systems both inbound and outbound (China, Russia, NK etc.). An at home solution for this is pfSense. Once I have another ethernet port up on my homelab I can write about this.
+My homelab SSH listens on port 2222, I forward that to port 22 on my router, the standard SSH port. I run many peering apps (like Storj and Sia) so as of writing this my IP sees 8,095 connections with 67 concurrent connections in 24 hours (7,500 come from China alone).
 
-Another version of endlessh I would like to share is endlessh-go.
+As a side note, if you wanted to prevent this you would need a Geo-IP filter / firewall to block IP ranges from getting near your system. It isn't uncommon to hear users blocking entire countries from their systems both inbound and outbound (China, Russia, NK etc.). An at home solution for this is pfSense/OPNsense. Once I have another ethernet port up on my homelab I can write more about this.
 
-[shizunge on Github](https://github.com/shizunge) has remade endlessh in golang, which can export its metrics to Prometheus, and further on to Grafana for a nice visual display of what is happening.
+Another version of Endlessh I would like to share is endlessh-go.
+
+[shizunge on Github](https://github.com/shizunge) remade Endlessh in golang with the added feature of exporting metrics to Prometheus. From there you can input them into Grafana for a nice visual display of what is happening. Endlessh-go will also convert IPs into Geohashes to show you where connecting IPs are coming from.
 
 ![endlessh-go dashboard](https://raw.githubusercontent.com/shizunge/endlessh-go/master/dashboard/screenshot.png)
-
-This version of endlessh will also translate IPs to Geohashes and show you where the connecting IPs are coming from. Best of all, it has a docker image, making install super easy! When it comes to testing out software I love when a docker image is available. Especially with software that requires dependencies I don't often use (sorry golang!)
 
 To get set up simply run:
 
@@ -56,7 +56,7 @@ To get set up simply run:
 docker run -d --name endlessh -p 2222:2222 shizunge/endlessh-go -logtostderr -v=1
 ```
 
-This image provides a working version of endlessh that will instantly start slowing down anyone trying to connect to you. Running ```docker logs endlessh``` will show you results instantly if you have any internet-facing connectable devices, this is part and parcel for being connectable to the outside world.  Make sure to forward the port on your router, ideally you will have it on 22 to the outside world as this is the standard SSH port.
+This image provides a working version of Endlessh that will slow down anyone trying to connect to your SSH port. Running ```docker logs endlessh``` will show you results if you have any internet-facing connectable devices. This is part and parcel of being connectable to the outside world.  Make sure to forward the port on your router, you will have it on 22 to the outside world as this is the standard SSH port.
 
 If you do not have a Grafana setup yet you can use the [example full stack](https://github.com/shizunge/endlessh-go/blob/master/examples/README.md) provided by shizunge for endlessh-go. If you clone their repo and go to examples you will see an available script to have both Prometheus and Grafana running. You are required to import the dashboard but this is non-trivial (create -> import -> 15156). Grafana runs on port 3000, after login you can simply select the endlessh dashboard and see whats happening.
 
