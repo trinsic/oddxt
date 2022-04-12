@@ -15,7 +15,6 @@ searchHidden: true
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
-weight: 10
 cover:
     image: "posts/images/dockerscripts.png" # image path/url
     relative: false # when using page bundles set this to true

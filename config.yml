@@ -27,6 +27,9 @@ languages:
                 - name: Tags
                   url: tags/
                   weight: 10
+                - name: Docker Scripts
+                  url: posts/docker-scripts/
+                  weight: 10
 
 outputs:
     home:
