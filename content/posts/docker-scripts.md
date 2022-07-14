@@ -25,13 +25,15 @@ This post is a collection of Docker Images I use in my homelab. Docker uses OS-l
 ### Crypto
 #### Storj
 
-Storj is an S3-compatible platform and suite of decentralized applications that allows you to store data in a secure and decentralized manner. This image allows you (the user) to supply Storj with your available storage. Like most crypto adventures this requires 24/7 access to any data you host.
+![Storj](../images/storj.screencap.png)
+
+Storj is an S3-compatible platform and suite of decentralized applications that allows you to store data in a secure and decentralized manner. This image is for providers to supply Storj with available storage, an [account is required](https://www.storj.io/node).
 
 ```bash
 docker run -d --restart always --stop-timeout 300 \
 -p 28967:28967/tcp \
 -p 28967:28967/udp \
--p 192.168.1.83:14002:14002 \
+-p 192.168.1.1:14002:14002 \
 -e WALLET="YOUR.WALLET.HERE" \
 -e EMAIL="YOUR.EMAIL.HERE" \
 -e ADDRESS="YOUR.DDNS.HERE:28967" \
@@ -42,7 +44,7 @@ docker run -d --restart always --stop-timeout 300 \
 --mount type=bind,source=/mnt/storj/dbs,destination=/app/dbs \
 --name storagenode storjlabs/storagenode:latest
 ```
-As of 2022, you can run a Storj node on a Raspberry Pi 3B or higher; or an x86 machine.
+As of 2022, you can run a Storj node on ARM devices as low as a Raspberry Pi 3B but it is recommended you use an x86 machine.
 
 ### Security
 #### Endlessh
